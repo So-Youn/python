@@ -1,6 +1,6 @@
 import requests
 import random
-
+# lotto라는 함수를 가진 파일
 def lotto(number = 1000):
     response = requests.get('https://dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=913')
     # print(response)  #  <Response [200]> : 성공
