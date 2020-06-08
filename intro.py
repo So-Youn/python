@@ -1,13 +1,16 @@
 #print("Hello,World");
 
 # 저장, 조건, 반복
-# 1. 저장
+# 1. 변수 저장, 무엇을 저장할 수 있을까?
 # int? str? bool?
 number = 10.123 # 정수, 소숫점 상관 없다.
-string = "string"
+string = "string"    # '' , " "
 string2 = "10"
-boolean = True
-#print(number,string2,boolean)
+boolean = True      # True, False
+# 파이썬에는 값이 없음을 표현하는 None타입이 존재
+nothing = None 
+#print(number,string2,boolean,nothing)
+print(type(nothing))    # <class 'NoneType'>
 
 # 2. 리스트 저장
 # [] 안에 있으면 리스트라고 한다.
