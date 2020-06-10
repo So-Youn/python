@@ -1,0 +1,15 @@
+<p>{{result}}</p>
+
+<h1>반복문  DTL = Django Template Language</h1>
+{#for 이렇게 하면 포문, 한줄 주석은 이렇게 처리 #}
+
+
+{% comment %}
+여기는 전부 출력이 안된다...
+{% endcomment %}
+
+
+
+{% for num in result %}
+  <p>{{num}}</p>
+{% endfor %}  

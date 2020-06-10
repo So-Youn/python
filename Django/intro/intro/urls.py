@@ -15,7 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from pages import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/',views.index),
+    path('hello/',views.hello),
+    path('name/',views.name),
+    path('introduce/',views.introduce),
+    path('forme/',views.forme),
+    path('yourname/<str:name>/',views.yourname),
+    path('nameage/<str:name>/<int:age>/', views.nameage),
+    path('multiple/<int:num1>/<int:num2>/', views.multiple),
+    path('gugu/<int:big>/<int:small>/',views.gugu),
+    path('dtl/',views.dtl),
+    path('forif/',views.forif),
 ]
