@@ -101,4 +101,10 @@ def forif(request):
       
     }
     return render(request, 'forif.html',context)
-
+def presentation(request):
+    students = ['윤소윤','김민정','이영주']
+    random.shuffle(students)
+    context = {
+        'students' : students
+    }
+    return render(request,'presentation.html',context)

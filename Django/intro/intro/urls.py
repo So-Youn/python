@@ -30,4 +30,5 @@ urlpatterns = [
     path('gugu/<int:big>/<int:small>/',views.gugu),
     path('dtl/',views.dtl),
     path('forif/',views.forif),
+    path('presentation/'views.presentation)
 ]
