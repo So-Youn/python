@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .live {
+      color: red;
+    }
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <!-- emmet li.live{$}*3 -->
+    <div class="live">1</div>
+    <div class="live">2</div>
+    <div class="live">3</div>
+  </ul>
+
+  <ul>
+    <!-- emmet li.live{$}*3 -->
+    <div class="non-live">1</div>
+    <div class="non-live">2</div>
+    <div class="non-live">3</div>
+  </ul>
+
+  <script>
+    const liveList = document.getElementsByClassName('live')
+    for (let i =0;i<liveList.length; i++){
+      liveList[i].className = 'blue'
+    }
+    const nonLiveList = document.querySelectorAll('.non-live')
+    for(let i=0;i<nonLiveList.length;i++){
+      nonLiveList[i].className = 'blue'
+    }
+  </script>
+</body>
+</html>

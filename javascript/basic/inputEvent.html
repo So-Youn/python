@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <input type="text" class="my-input">
+    <input type="submit" value="제출">
+  </form>
+  <h1> 내용 </h1>
+  <script>
+    const myInput = document.querySelector('.my-input')
+    myInput.addEventListener('input',function(event){
+      console.log(event.target.value) 
+      //event.target 우리가 쓰고있는 각종 속성을 뽑아올 수 있다.
+    })
+    const myH = document.querySelector('h1')
+    myH.addEventListener('click', function(evenet){
+      event.target.style.color = 'blue'
+    })
+  
+  </script>
+</body>
+</html>
